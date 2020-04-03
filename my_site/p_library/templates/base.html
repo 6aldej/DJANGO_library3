@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+
+<body>
+
+    <header>
+      <ul>
+        <li><a href="/">Библиотека</a></li>
+        <li><a href="/publishers/">Издательства</a></li>
+        <li><a href="/p_library/authors">Авторы</a></li>
+        <li><a href="/p_library/author/create">Добавить автора</a></li>
+        <li><a href="/p_library/author_book/create_many">Добавить несколько авторов</a></li>
+      </ul>
+    </header>
+
+  <div class="container">
+    
+    <div class="row">
+  
+      <div id="content" class="col-9">
+        {% block content %}
+        {% endblock %}
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>

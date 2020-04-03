@@ -1,0 +1,22 @@
+{% extends "base.html"%}
+{% load static %}
+
+{% block content %}
+
+<body>  
+<form method="post">  
+  {% csrf_token %}  
+  {% for form in author_formset %}  
+        {{ form.as_ul }}  
+        <br>  
+  {% endfor %}  
+  
+    {% for form in book_formset %}  
+        {{ form.as_ul }}  
+        <br>  
+  {% endfor %}  
+    <input type="submit" value="Сохранить"/>  
+</form>  
+</body>  
+
+{% endblock %}

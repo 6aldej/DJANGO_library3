@@ -1,0 +1,65 @@
+@font-face {
+    font-family: "Philosopher-Regular"; /* Имя шрифта */
+    src: url(../fonts/Philosopher-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+
+@font-face {
+    font-family: "Philosopher-Bold"; /* Имя шрифта */
+    src: url(../fonts/Philosopher-Bold.ttf); /* Путь к файлу со шрифтом */
+   }
+   @font-face {
+    font-family: "Philosopher-Italic"; /* Имя шрифта */
+    src: url(../fonts/Philosopher-Italic.ttf); /* Путь к файлу со шрифтом */
+   }
+
+body {
+    font-family: "Philosopher-Regular";
+    background-color: #dee0e6;
+}
+
+header {
+    display: flex;    
+    background-color: #1ac0c6;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0 0.5em 4px #ffa822;
+}
+
+
+
+li {
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+    list-style-type: none;
+    
+}
+
+header>ul>li>a {
+    
+    color: #dee0e6;
+    background-color: #134e6f;
+    box-shadow: 0 0.2em 4px black;
+    text-transform: uppercase;
+    text-decoration: none;
+	list-style-type: none;
+    font-size: 25px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 20px;
+}
+
+header>ul>li> a:hover {
+    
+    color: #134e6f;
+    background-color: #dee0e6;
+    text-transform: uppercase;
+}
+
+table tr,td,th {
+    border: 2px solid grey !important; 
+  }
+
+.author > ul {
+    display: flex;
+    flex-direction: column;
+}
